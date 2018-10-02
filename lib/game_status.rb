@@ -35,7 +35,7 @@ def won?(board)
 end
 =end
 
-def won?(board, WIN_COMBINATIONS)
+def won?(board)
   count = 0
   while count < WIN_COMBINATIONS.length
     win_combination = WIN_COMBINATIONS[count]
