@@ -35,10 +35,10 @@ def won?(board)
 end
 =end
 
-def won?(board)
+def won?(board, WIN_COMBINATIONS)
   count = 0
-  while count < WIN_COMBINATIONS.size
-    curr = WIN_COMBINATIONS[count]
+  while count < WIN_COMBINATIONS.length
+    win_combination = WIN_COMBINATIONS[count]
     # win_combination is a 3 element array of indexes that compose a win, [0,1,2]
     # grab each index from the win_combination that composes a win.
     win_index_1 = win_combination[0]
